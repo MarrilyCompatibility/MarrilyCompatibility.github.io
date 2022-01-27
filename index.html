@@ -1260,6 +1260,7 @@
   <script type="text/javascript">
         window.addEventListener('beforeunload', function (e) {
             signOut();
+            $(window).off('beforeunload');
             e.returnValue = '';
         });
   </script>
