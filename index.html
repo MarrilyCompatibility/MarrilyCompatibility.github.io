@@ -1258,10 +1258,9 @@
   <script src="https://apis.google.com/js/platform.js" async defer></script>
 
   <script type="text/javascript">
-        $(window).off('beforeunload');
         window.addEventListener('beforeunload', function (e) {
             signOut();
-            e.returnValue = '';
+//             e.returnValue = '';
         });
   </script>
 
